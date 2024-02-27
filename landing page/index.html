@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyMingle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e0367bab23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#" onclick="scrollToSection('about-section')">About us</a></li>
+                <li><a href="#" onclick="scrollToSection('contact-section')">Contact</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>THE <br> TIMELESS <br> MELODIES </h1> 
+            </div>
+            <div class="right">
+                <input type="email" class="mb-4" style="font-size:22px;color:#000000;border-color:#000000;border-width:2px;border-style:solid; border-radius:10px;" id="emailInput" placeholder="Enter your email address">
+                <button id="signupButton" class="bg-primary p-2" style="font-size:22px;color:#000000; border-radius:3px;border-width:1;">Sign Up</button>
+                <div>
+                    <p>Click To Play</p>
+                    <img src="play.png" id="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="mysong">
+        <source src="Walker.mp3.mp3" type="audio/mp3">
+    </audio>
+    <section id="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="about.jpg" alt="Melodies Mingle">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p><b>Welcome to timeless melodies</b><p>
+                <center>Step into the enchanting world of MelodyMingle, where the language of music becomes a profound narrative. Our platform is more than just a collection of tunes; it's a journey through the rich tapestry of emotions and stories that only music can convey. As you explore our curated selection, each note and beat will transport you to a realm where passion and rhythm coalesce. MelodyMingle is a sanctuary for those seeking authenticity in sound, a place where melodies aren't just heard but felt deep within the soul. Join us in this musical odyssey, where every chord is a brushstroke on the canvas of life, creating moments that linger in your heart long after the music fades away. Welcome to MelodyMingle, where the real magic of music unfolds.</center>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Contact Us</h2>
+                <p>Have any questions or feedback? Feel free to reach out to us. We value your input and are here to assist you.</p>
+                <p>For customer support, please email us at <a href="mailto:info@yourwebsite.com">melodies@gmail.com</a> or call us at <span class="phone-number">+91 9765432189</span>.</p>
+                <div class="social-media-icons">
+                    <a href="tel:0891 276538"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:melodies@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/melodies" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/melodies" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="feedback-form">
+                    <h3>Give Us Your Feedback</h3>
+                    <form action="#" method="post">
+                        <label for="feedback">Your Feedback:</label>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src = "script.js"></script>
+</body>
+</html>
